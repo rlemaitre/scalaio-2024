@@ -62,13 +62,3 @@ const imageSrc = resolveAssetUrl(props.image);
 
   </div>
 </template>
-
-<style scoped>
-.clip-each {
-  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
-  background-image: v-bind(imageSrc);
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: block;
-}
-</style>

@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'Ailerons';
-    src: url('/fonts/Ailerons.otf') format('opentype');
+    font-family: 'Monad';
+    src: url('/fonts/Monad.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -21,7 +21,7 @@
 .slidev-layout {
     h1, h2, h3, h4, h5, h6 {
         color: var(--slidev-theme-primary);
-        font-family: 'Ailerons', sans-serif;
+        font-family: 'Monad', sans-serif;
         padding-top: 8px;
         padding-bottom: 8px;
     }

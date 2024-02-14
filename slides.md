@@ -60,7 +60,7 @@ website:
     url: https://ledger.com
 twitter: __vberg
 mail: valentin.bergeron@ledger.fr
-image: /images/vbergeron-orig.png
+image: /images/vbergeron.png
 ---
 
 ---
@@ -77,7 +77,7 @@ website:
     url: https://ledger.com
 twitter: rlemaitre
 mail: raphael@rlemaitre.com
-image: /images/rlemaitre-3.png
+image: /images/rlemaitre.png
 ---
 
 ---
@@ -777,6 +777,8 @@ No implementation leak
 opaque type Positive <: Int  = Int :| Greater[0]
 
 object Positive extends RefinedTypeOps[Int, Greater[0], Positive]
+
+
 ```
 
 ---
