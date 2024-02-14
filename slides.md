@@ -813,7 +813,7 @@ coverDate:
 
 <h1 class="!text-8xl">Iron</h1>
 
-<div class="w-full flex flex-col items-center"><img src="images/scalalove-logo.svg" width="150"/></div>
+<div class="w-full flex flex-col items-center"><img src="/images/scalalove-logo.svg" width="150"/></div>
 
 <h1 class="!text-8xl">Ecosystem</h1>
 
