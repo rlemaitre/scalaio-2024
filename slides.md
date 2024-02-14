@@ -1,10 +1,27 @@
 ---
 theme: ./theme
-remoteAssets: true
 lineNumbers: true
 colorSchema: light
 highlighter: shiki
 titleTemplate: '%s'
+info: |
+  When designing an application, we often ends up with domain specific types, that all behold constraints that we try to enforce as much as possible : an age is positive, a delivery date can’t be in the past, etc. Modeling the data right is a part of the success of scala and functional programming in general, but it also brings either boilerplate (we have to do again and again validation), or rely purely on conventions.
+
+  But there is hope. Meet the Iron library.
+
+  Iron is, a type constraint library that allow us to have a safe, declarative and smarter model. It enable us to have a continuous stream of valid data from our API endpoints to the database, and removed a whole class of bugs. Using advanced features like opaque types, inlines and the new macro system, it offer a true 0 cost, 0 dependency library that don’t hamper compile time.
+
+  In this talk, we’ll show first the different technique we can use to apply constraints is our domains. Then, we’ll present Iron, its features, extensions, and integrations. We’ll finish by showcasing a fully-integrated constraint-enforcing app.
+author: Raphaël Lemaitre & Valentin Bergeron
+presenter: true
+download: true
+export:
+  format: pdf
+  timeout: 30000
+  dark: false
+  withClicks: false
+  withToc: false
+remoteAssets: true
 drawings:
   persist: false
 selectable: true
@@ -19,8 +36,6 @@ themeConfig:
   paginationPagesDisabled: [1, 55]
   paginationX: r
   paginationY: t
-addons:
-  - '@katzumi/slidev-addon-qrcode'
 layout: cover
 coverDate: ''
 title: Armored Type Safety with Iron
@@ -1020,11 +1035,13 @@ coverDate: ''
 
 <div class="flex justify-center items-center">
     <figure class="flex justify-center items-center">
-        <img alt="Slides available at https://talks.rlemaitre.com/scalaio-2024" src="/images/slides-url.svg" width="300"/>
-        <figcaption>
-            Slides available at <a href="https://talks.rlemaitre.com/scalaio-2024">https://talks.rlemaitre.com/scalaio-2024</a>
-        </figcaption>
-    </figure>
+      <div>
+        <img alt="Slides available at https://scalaio-2024.rlemaitre.com" src="/images/slides-url.svg" width="300"/>
+      </div>      
+      <figcaption>
+          Slides available at <a href="https://scalaio-2024.rlemaitre.com/">https://talks.rlemaitre.com/scalaio-2024</a>
+      </figcaption>
+  </figure>
 </div>
 
 <h1>Thank you!</h1>
