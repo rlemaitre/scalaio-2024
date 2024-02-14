@@ -20,24 +20,29 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
-      - uses: actions/checkout@v4
+      - name: ⬇️ Checkout
+        uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v4
+      - name: 📄 Configure Pages
+        id: pages
+        uses: actions/configure-pages@v4
+
+      - name: ☊ Setup node
+        uses: actions/setup-node@v4
         with:
           node-version: 'lts/*'
 
-      - name: Install dependencies
+      - name: 📦 Install dependencies
         run: npm install
 
-      - name: Build
+      - name: 👷 Build page
         run: npm run build
 
-      - uses: actions/configure-pages@v4
-
-      - uses: actions/upload-pages-artifact@v3
+      - name: 📦 Upload Artifacts
+        uses: actions/upload-pages-artifact@v1
         with:
-          path: dist
+          path: ./dist
 
-      - name: Deploy
+      - name: 🚀 Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
