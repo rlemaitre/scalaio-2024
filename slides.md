@@ -794,6 +794,7 @@ opaque type Positive <: Int  = Int :| Greater[0]
 object Positive extends RefinedTypeOps[Int, Greater[0], Positive]
 
 
+// ...
 ```
 
 ---
@@ -1033,14 +1034,15 @@ layout: default
 # Takeaways
 
 
-<div class="w-full h-full grid grid-cols-2 content-evenly">
-    <div class="flex flex-col col-span-2 w-full">
+<div class="w-full h-full grid grid-cols-3 content-evenly">
+    <div class="flex flex-col col-span-3 w-full">
         <quote author="Yaron Minsky" work="Effective ML Revisited">
             <p class="text-3xl">Making illegal states unrepresentable</p>
         </quote>
     </div>
-    <div class="flex flex-col text-xl cornered" v-click>Scala 3 type system is incredibly powerful</div>
+    <div class="flex flex-col text-xl cornered" v-click>Reduced the feedback loop to minimum</div>
     <div class="flex flex-col text-xl cornered" v-click>Noticeably increased the reliability of our code</div>
+    <div class="flex flex-col text-xl cornered" v-click>Scala 3 type system is incredibly powerful</div>
 </div>
 
 ---
