@@ -50,6 +50,21 @@ Note
 -->
 
 ---
+layout: cover
+coverDate: ''
+---
+
+
+<div class="flex justify-center items-center">
+    <figure class="flex justify-center items-center">
+      <div>
+        <img alt="Slides available at https://scalaio-2024.rlemaitre.com" src="/images/slides-url.svg" width="300"/>
+      </div>
+  </figure>
+</div>
+
+
+---
 layout: profile
 speaker: Valentin Bergeron
 job: Engineering Team Lead
